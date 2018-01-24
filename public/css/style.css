@@ -63,3 +63,36 @@ h3{
 #home h1, h2, h3 {
   margin: 1em 0em;
 }
+
+/* DELIVERY */
+
+#delivery .container{
+  text-align: center;
+}
+
+#delivery h2{
+  margin-bottom: 0.2em;
+}
+
+#delivery .information{
+  text-align: left;
+  height: 10em;
+}
+
+#delivery .instruction{
+  height:10em;
+}
+
+#delivery input{
+  margin:0em 1em 1em 1em;
+  border-radius: 4px;
+  padding: 0.2em;
+}
+
+.information p{
+  margin: 0em 0em 0em 1em;
+}
+
+.trucker-price, .shipper-option{
+  display: inline-block;
+}

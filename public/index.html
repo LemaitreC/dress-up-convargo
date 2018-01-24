@@ -49,24 +49,59 @@
 
   <section id="delivery">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <div id="trucker">
-            <input class="name" type="text" placeholder="Trucker name" />
-            <input class="price-by-km" type="number" placeholder="Price by km" />
-            <input class="price-by-cubic" type="number" placeholder="Price by m3" />
+      <h2>We need information about your delivery</h2>
+
+      <div id="trucker">
+        <h3>Trucker</h3>
+        <div class="row">
+          <div class="col-sm-6 instruction">
+            <p> Bla bla blabla bla</p>
           </div>
-          <div id="shipper">
-            <input class="name" type="text" placeholder="Shipper name" />
-            <input class="distance" type="number" placeholder="Distance in km" />
-            <input class="volume" type="number" placeholder="Volume in m3" />
-            <input class="option" type="checkbox" placeholder="Deductible option" />
-          </div>
-          <button id="compute">Compute</button>
-          <div id="actors"></div>
+          <div class="col-sm-6 information">
+            <div>
+            <p>Trucker name: </p>
+            <input class="name" type="text" placeholder="Trucker name" /> </div>
+          <div class="trucker-price">
+            <p>Price by distance: </p>
+            <input class="price-by-km" type="number" placeholder="Price by km" /></div>
+          <div class="trucker-price">
+            <p>Price by volume: </p>
+            <input class="price-by-cubic" type="number" placeholder="Price by m3" /></div>
+            </div>
         </div>
-        <div class="col-sm-6"></div>
       </div>
+
+      <div id="shipper">
+        <h3>Shipper</h3>
+        <div class="row">
+          <div class="col-sm-6 instruction">
+            <p> Bla bla blabla bla</p>
+          </div>
+          <div class="col-sm-6 information">
+            <div class="shipper-option">
+              <p>Shipper name: </p>
+            <input class="name" type="text" placeholder="Shipper name" />
+          </div>
+          <div class="shipper-option">
+            <p>Deductible option: </p>
+          <input class="option" type="checkbox" placeholder="Deductible option" />
+          </div>
+          <div class="shipper-option">
+            <p>Distance in km: </p>
+            <input class="distance" type="number" placeholder="Distance in km" />
+            </div>
+            <div class="shipper-option">
+              <p>Volume in m3: </p>
+            <input class="volume" type="number" placeholder="Volume in m3" />
+            </div>
+
+          </div>
+        </div>
+        <button id="compute">Compute</button>
+        <div id="actors"></div>
+      </div>
+
+    </div>
     </div>
 
   </section>
