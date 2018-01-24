@@ -1,23 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CSS/HTML Workshop with Convargo</title>
-  </head>
-  <body>
-    <div id="trucker">
-      <input class="name" type="text" placeholder="Trucker name"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
-      <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Convargo - Welcom</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body id="main-page">
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#home">Convargo</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class=" nav navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#delivery">New Delivery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div id="shipper">
-      <input class="name" type="text" placeholder="Shipper name"/>
-      <input class="distance" type="number" placeholder="Distance in km"/>
-      <input class="volume" type="number" placeholder="Volume in m3"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
+  </nav>
+
+  <section id="home">
+    <div class="container">
+      <img src="image/delivery-truck.png" alt="Truck">
+      <h1>Expédiez votre marchandise rapidement</h1>
+      <hr class="star-light">
+      <h3>Convargo permet aux entreprises de contacter plus de 2000 professionnels du transport routier de marchandises pour expédier leurs stocks.</h3>
     </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
-    <script src="convargo.js"></script>
-    <script src="index.js"></script>
-  </body>
+  </section>
+
+  <section id="delivery">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div id="trucker">
+            <input class="name" type="text" placeholder="Trucker name" />
+            <input class="price-by-km" type="number" placeholder="Price by km" />
+            <input class="price-by-cubic" type="number" placeholder="Price by m3" />
+          </div>
+          <div id="shipper">
+            <input class="name" type="text" placeholder="Shipper name" />
+            <input class="distance" type="number" placeholder="Distance in km" />
+            <input class="volume" type="number" placeholder="Volume in m3" />
+            <input class="option" type="checkbox" placeholder="Deductible option" />
+          </div>
+          <button id="compute">Compute</button>
+          <div id="actors"></div>
+        </div>
+        <div class="col-sm-6"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="convargo.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>

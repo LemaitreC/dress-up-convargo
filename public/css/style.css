@@ -1,0 +1,65 @@
+body{
+  font-size: 14px;
+  font-family: "Source code pro", cursive;
+}
+
+h1{
+  font-size: 3em;
+}
+
+h2{
+  font-size: 2.5em;
+}
+
+h3{
+  font-size: 2em;
+}
+
+/* NAVBAR */
+.navbar{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.3em;
+  color: white;
+  background-color: #2c3e50;
+  min-height: 4em;
+  padding-top: 0.6em;
+  border-radius: 0px;
+  margin:0px;
+}
+
+.navbar-brand{
+  font-size: 20px;
+}
+.navbar-nav{
+  list-style: none;
+  float: right;
+}
+
+.nav-item{
+  margin: 0 0.7em;
+}
+.nav-link{
+  border-radius: 12px;
+  padding:
+}
+
+/* HOME */
+
+#home{
+  background: #7fbbdf;
+  color: white;
+  text-align: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  height: 100%;
+}
+
+#home img{
+  height: 15em;
+  margin-top: 3em;
+}
+
+#home h1, h2, h3 {
+  margin: 1em 0em;
+}
