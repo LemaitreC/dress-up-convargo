@@ -1,22 +1,27 @@
-body{
+body {
   font-size: 14px;
   font-family: "Source code pro", cursive;
 }
 
-h1{
+h1 {
   font-size: 3em;
 }
 
-h2{
+h2 {
   font-size: 2.5em;
 }
 
-h3{
+h3 {
   font-size: 2em;
 }
 
+h4 {
+  font-size: 1.5em;
+}
+
 /* NAVBAR */
-.navbar{
+
+.navbar {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.3em;
@@ -25,28 +30,30 @@ h3{
   min-height: 4em;
   padding-top: 0.6em;
   border-radius: 0px;
-  margin:0px;
+  margin: 0px;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-size: 20px;
 }
-.navbar-nav{
+
+.navbar-nav {
   list-style: none;
   float: right;
 }
 
-.nav-item{
+.nav-item {
   margin: 0 0.7em;
 }
-.nav-link{
+
+.nav-link {
   border-radius: 12px;
   padding:
 }
 
 /* HOME */
 
-#home{
+#home {
   background: #7fbbdf;
   color: white;
   text-align: center;
@@ -55,7 +62,7 @@ h3{
   height: 100%;
 }
 
-#home img{
+#home img {
   height: 15em;
   margin-top: 3em;
 }
@@ -66,33 +73,105 @@ h3{
 
 /* DELIVERY */
 
-#delivery .container{
+#delivery .container {
   text-align: center;
 }
 
-#delivery h2{
+#delivery h2 {
   margin-bottom: 0.2em;
 }
 
-#delivery .information{
+#delivery .information {
   text-align: left;
   height: 10em;
 }
 
-#delivery .instruction{
-  height:10em;
+#delivery .instruction {
+  height: 10em;
 }
 
-#delivery input{
-  margin:0em 1em 1em 1em;
-  border-radius: 4px;
-  padding: 0.2em;
+#delivery h3 {
+  display: inline-block;
 }
 
-.information p{
+.form-group {
+  width: 45%;
+}
+
+.information p {
   margin: 0em 0em 0em 1em;
 }
 
-.trucker-price, .shipper-option{
+.instruction p{
+  margin: 2em 0;
+}
+
+#delivery .glyphicon{
+  color :red;
+  font-size: 1.5em;
+      margin-top: 80%;
+}
+
+.trucker-price, .shipper-option {
   display: inline-block;
+}
+
+#compute {
+  margin: 2em auto;
+}
+
+/* ABOUT */
+
+#about {
+  background: #ffd15c;
+}
+
+#about span {
+  display: inherit;
+}
+
+#about .row{
+  margin: 1em 0 5em 0;
+}
+.bubble-note {
+  text-align: center;
+  display: inline-block;
+}
+
+#about .container{
+  text-align: center;
+  padding: 1.5em 0;
+}
+
+#about h4{
+  margin:2em;
+}
+
+.presentation-note {
+  border: solid 3px #ff7058;
+  background: #f2f2f2;
+  border-radius: 80em;
+  height: 12em;
+  width: 12em;
+  padding-top: 3em;
+  margin: auto;
+}
+
+.big-note {
+  font-size: 1.8em;
+  font-weight: 900;
+}
+
+.note {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+.cv-advantage img{
+  width: 60%;
+}
+
+.advantage{
+  margin:0.5em;
+
 }

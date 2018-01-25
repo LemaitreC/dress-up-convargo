@@ -51,60 +51,162 @@
     <div class="container">
       <h2>We need information about your delivery</h2>
 
-      <div id="trucker">
-        <h3>Trucker</h3>
-        <div class="row">
-          <div class="col-sm-6 instruction">
-            <p> Bla bla blabla bla</p>
-          </div>
-          <div class="col-sm-6 information">
-            <div>
-            <p>Trucker name: </p>
-            <input class="name" type="text" placeholder="Trucker name" /> </div>
-          <div class="trucker-price">
-            <p>Price by distance: </p>
-            <input class="price-by-km" type="number" placeholder="Price by km" /></div>
-          <div class="trucker-price">
-            <p>Price by volume: </p>
-            <input class="price-by-cubic" type="number" placeholder="Price by m3" /></div>
+      <form>
+        <div id="trucker">
+          <h3>Trucker</h3>
+          <div class="form-row">
+            <div class="col-sm-5 instruction">
+              <p>In order to estimate the cost of your delivery we need, first of all, the <b>name</b> of the Trucker.
+              Secondly you may enter the <b>price</b> of this trucker for a specific <b>distance</b> and <b>volume</b>.</p>
             </div>
-        </div>
-      </div>
+            <div class="col-sm-1">
+              <span class="glyphicon glyphicon-arrow-right"></span></p>
+            </div>
+            <div class="col-md-6 information">
 
-      <div id="shipper">
-        <h3>Shipper</h3>
-        <div class="row">
-          <div class="col-sm-6 instruction">
-            <p> Bla bla blabla bla</p>
-          </div>
-          <div class="col-sm-6 information">
-            <div class="shipper-option">
-              <p>Shipper name: </p>
-            <input class="name" type="text" placeholder="Shipper name" />
-          </div>
-          <div class="shipper-option">
-            <p>Deductible option: </p>
-          <input class="option" type="checkbox" placeholder="Deductible option" />
-          </div>
-          <div class="shipper-option">
-            <p>Distance in km: </p>
-            <input class="distance" type="number" placeholder="Distance in km" />
-            </div>
-            <div class="shipper-option">
-              <p>Volume in m3: </p>
-            <input class="volume" type="number" placeholder="Volume in m3" />
-            </div>
+              <div class="form-group">
+                <label>Trucker name: </label>
+                <input type="text" class="form-control name" placeholder="Trucker name" />
+              </div>
 
+              <div class=" form-group trucker-price">
+                <label>Price by distance: </label>
+                <div class="input-group">
+                  <input type="number" class="form-control bfh-number price-by-km" placeholder="Price by km" data-min="0" data-max="9999999">
+                  <span class="input-group-addon">km</span>
+                </div>
+              </div>
+
+              <div class="form-group trucker-price">
+                <label>Price by volume: </label>
+                <div class="input-group">
+                  <input type="number" class="form-control bfh-number price-by-cubic" placeholder="Price by m3" data-min="0" data-max="9999999">
+                  <span class="input-group-addon">m3</span>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
-        <button id="compute">Compute</button>
-        <div id="actors"></div>
-      </div>
 
+
+        <div id="shipper">
+          <h3>Shipper</h3>
+          <div class="form-row">
+            <div class="col-sm-5 instruction">
+              <p>Afterwards we need information on your order, starting by <b>your name</b>.
+              If you want to subscribe for the <b>deductible option</b>, don't forget to check the box.
+            Don't forget to enter the <b>distance</b> of your delivery and the <b>volume</b> of your goods.</p>
+            </div>
+            <div class="col-sm-1">
+              <span class="glyphicon glyphicon-arrow-right"></span></p>
+            </div>
+            <div class="col-md-6 information">
+
+              <div class=" form-group shipper-option">
+                <label>Shipper name: </label>
+                <input type="text" class="form-control name" placeholder="Shipper name" />
+              </div>
+
+              <div class="form-group shipper-option">
+                <label>Deductible option: </label>
+                <input type="checkbox" class=" option" placeholder="Deductible option" />
+              </div>
+
+              <div class=" form-group shipper-option">
+                <label for="distance">Distance in km: </label>
+                <div class="input-group">
+                  <input type="number" class="form-control bfh-number distance" placeholder="Distance in km" data-min="0" data-max="9999999">
+                  <span class="input-group-addon">km</span>
+                </div>
+              </div>
+
+              <div class="form-group shipper-option">
+                <label for="distance">Volume in m3: </label>
+                <div class="input-group">
+                  <input type="volume" class="form-control bfh-number volume" placeholder="Distance in km" data-min="0" data-max="9999999">
+                  <span class="input-group-addon">m3</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <button type="button" class="btn btn-secondary" id="compute">Compute</button>
+          <div id="actors"></div>
+        </div>
+      </form>
     </div>
     </div>
 
   </section>
+
+  <section id="about">
+    <div class="container">
+
+      <h3>Convargo wants to revolutionise the freight industry, by connecting shippers with truckers in real time via this web application.</h3>
+
+      <h4>The Goods freight transport sector is a key sector of the Europe economy:</h4>
+      <div class="row">
+        <div class=" col-sm-3 bubble-note">
+          <p class="presentation-note">
+            <span class="big-note">300 B €</span>
+            <span class="note">in EUROPE </span>
+          </p>
+        </div>
+        <div class="col-sm-3 bubble-note">
+          <p class="presentation-note">
+            <span class="big-note">43 B €</span>
+            <span class="note">in FRANCE </span>
+          </p>
+        </div>
+        <div class="col-sm-3 bubble-note">
+          <p class="presentation-note">
+            <span class="big-note">40,000 </span>
+            <span class="note">COMPANIES</span>
+          </p>
+        </div>
+        <div class=" col-sm-3 bubble-note">
+          <p class="presentation-note">
+            <span class="big-note">1/3 trucks</span>
+            <span class="note">drive enpty</span>
+          </p>
+        </div>
+
+      </div>
+        <h4>The Convargo platform allows shippers to:</h4>
+
+        <div class="col-sm-3 bubble-note">
+          <p class="cv-advantage">
+            <img src="image/delivery-truck2.png" alt="Wide range of companies">
+            <span class="advantage">Access directy to a wide range of road transport companies with available loading capacity.</span>
+          </p>
+        </div>
+        <div class="col-sm-3 bubble-note">
+          <p class="cv-advantage">
+            <img src="image/computer.png" alt="Wide range of companies">
+            <span class="advantage">Compute and display the transport price calculated according to the best opportunities on the market at a time T.</span>
+          </p>
+        </div>
+        <div class="col-sm-3 bubble-note">
+          <p class="cv-advantage">
+            <img src="image/tracking.png" alt="Wide range of companies">
+            <span class="advantage">Track in real-time the goods delivery.</span>
+          </p>
+        </div>
+        <div class="col-sm-3 bubble-note">
+          <p class="cv-advantage">
+            <img src="image/online.png" alt="Wide range of companies">
+            <span class="advantage">Access to proof of transport and dematerialized invoices.</span>
+          </p>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact"></section>
 
   <script src="convargo.js"></script>
   <script src="index.js"></script>
