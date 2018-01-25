@@ -7,10 +7,10 @@
     const div = document.createElement('div');
     const template = actors.map(actor => {
       return `
-        <div class="actor">
-          <span>${actor.who}</span>
-          <span>${actor.type}</span>
-          <span>${actor.amount}</span>
+        <div class="actor col-sm-2">
+          <span class="amount">${actor.amount} €</span></br>
+          <span class="who">${actor.who}</span>
+          <span class="type">${actor.type}</span>
         </div>
       `;
     }).join('');
@@ -18,6 +18,9 @@
     div.innerHTML = template;
     fragment.appendChild(div);
     document.querySelector('#actors').innerHTML = '';
+    document.querySelector('#actors').innerHTML += `<div class="res col-sm-2">
+        <span >=</span>
+      </div>`;
     document.querySelector('#actors').appendChild(fragment);
   };
 
